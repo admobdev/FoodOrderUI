@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Burgers"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/icon1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_android_black_24dp"/>
+
+                <ImageView
+                    android:id="@+id/check1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_check_circle_outline_24"
+                    android:layout_gravity="end|bottom"/>
+
+            </FrameLayout><FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_android_black_24dp"/>
+
+            <ImageView
+                android:id="@+id/check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_check_circle_outline_24"
+                android:layout_gravity="end|bottom"/>
+
+        </FrameLayout><FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_android_black_24dp"/>
+
+            <ImageView
+                android:id="@+id/check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_check_circle_outline_24"
+                android:layout_gravity="end|bottom"/>
+
+        </FrameLayout><FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_android_black_24dp"/>
+
+            <ImageView
+                android:id="@+id/check4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_check_circle_outline_24"
+                android:layout_gravity="end|bottom"/>
+
+        </FrameLayout><FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_android_black_24dp"/>
+
+            <ImageView
+                android:id="@+id/check5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_check_circle_outline_24"
+                android:layout_gravity="end|bottom"/>
+
+        </FrameLayout><FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_android_black_24dp"/>
+
+            <ImageView
+                android:id="@+id/check6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_check_circle_outline_24"
+                android:layout_gravity="end|bottom"/>
+
+        </FrameLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mainimage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:src="@drawable/img" />
+
+            <TextView
+                android:id="@+id/burgername"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/berkshire_swash"
+                android:text="American\nCheesebuger"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/weightofburger"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Weight:    250 g"
+                android:layout_marginStart="20dp"
+                android:layout_weight="0.3"
+                android:textSize="18sp"
+                android:textColor="#2D014B"/>
+
+            <TextView
+                android:id="@+id/priceofburger"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="$ 7.99"
+                android:layout_marginStart="20dp"
+                android:layout_weight="0.4"
+                android:textSize="39sp"
+                android:textColor="#FF5722"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textColor="#777777"
+                    android:text="@string/Decription"/>
+                <Button
+                    android:id="@+id/orderbutton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Order"
+                    android:layout_marginTop="16dp"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
