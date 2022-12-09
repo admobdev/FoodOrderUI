@@ -13,7 +13,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="290dp"
+            android:layout_width="260dp"
             android:layout_height="80dp"
             android:fontFamily="@font/bigshot_one"
             android:gravity="end |center"
@@ -26,8 +26,8 @@
             android:layout_width="50dp"
             android:paddingEnd="3dp"
             android:layout_marginStart="5dp"
-            android:layout_height="70dp"
-            android:src="@drawable/img_7"
+            android:layout_height="80dp"
+            android:src="@drawable/img_8"
              />
 
     </LinearLayout>
@@ -41,7 +41,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:layout_marginStart="26dp"
+            android:layout_marginStart="16dp"
             android:layout_weight="0.9"
             android:gravity="center"
             android:text="All item"
@@ -66,7 +66,7 @@
             android:layout_weight="0.9"
             android:gravity="center"
             android:paddingStart="15dp"
-            android:text="New times"
+            android:text="Fries"
             android:textColor="#959595"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -85,10 +85,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:layout_weight="1"
+            android:layout_weight="0.9"
             android:gravity="center"
-            android:paddingStart="35dp"
-            android:text="Childrens"
+            android:paddingStart="15dp"
+            android:text="Drinks"
             android:textColor="#959595"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -98,8 +98,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="5dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="338dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="339dp"
         android:background="#0B0707"
         android:paddingTop="4dp">
 
@@ -268,7 +268,8 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/berkshire_swash"
-                android:paddingStart="10dp"
+                android:paddingStart="21dp"
+                android:layout_gravity="end"
                 android:text="American\nCheesebuger"
                 android:textColor="@color/black"
                 android:textSize="40sp"
@@ -279,17 +280,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.3"
-                android:paddingStart="10dp"
-                android:text="Weight:    250 g"
+                android:layout_gravity="top"
+                android:paddingStart="21dp"
+                android:text="Weight:  250 g"
                 android:textColor="#2D014B"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/priceofburger"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.5"
-                android:paddingStart="10dp"
+                android:paddingStart="21dp"
                 android:text="$ 7.99"
                 android:textColor="#FF5722"
                 android:textSize="49sp" />
@@ -305,7 +307,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:paddingStart="10dp"
+                    android:paddingStart="21dp"
                     android:paddingTop="40dp"
                     android:text="@string/Decription"
                     android:textColor="#777777" />
