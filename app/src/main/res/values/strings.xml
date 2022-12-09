@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">FoodOrderUI</string>
-    <string name="Decription">Ingredients used to create cheeseburgers follow similar patterns foundin the regional variations of hamburgers, although most start with ground beefCommon cheeses used for topping are American,Swiss, Cheddar and other meltable cheeses. Popular toppings include lettuce, tomato...
-    </string>
+    <string name="Decription0">Here you can read about burger that you choose : )  </string>
+    <string name="Decription1">Lean,delicious and free-range,whats not to like? Elk meat, recently rising in popularity because of a certain bow-hunting podcast celebrity, is something Canadians and Scandinavians have been eating for millennia. It makes a mean burger too</string>
+    <string name="Decription2">Cheeseburger is a hamburger topped with cheese. Traditionally, the slice of cheese is placed on top of the meat patty. The cheese is usually added to the cooking hamburger patty shortly before serving, which allows the cheese to melt.</string>
+    <string name="Decription3">Hamburger, or simply burger, is a food consisting of fillings—usually a patty of ground meat, typically beef —placed inside a sliced bun or bread roll.</string>
+    <string name="Decription4">Unlike regular burgers, this local specialty is made with steamed ground beef and steamed chunks of cheese (usually cheddar). They are both steamed separately, the beef in special metal molds, and the cheese in separate containers.</string>
+    <string name="Decription5">Slaw burger is a traditional American type of burger thats common in the southern parts of the United States. Its essentially a classic burger topped with coleslaw. In most cases, the burger consists of a meat patty thats topped with sliced tomatoes, sliced onions, and coleslaw dressing.</string>
+    <string name="Decription6">Order this one off the secret menu that’s not-so-secret at all. Leveling up to “Animal Style” will give you added pickles, extra spread with grilled onions, and they’ll fry some mustard onto your patties.</string>
 </resources>
