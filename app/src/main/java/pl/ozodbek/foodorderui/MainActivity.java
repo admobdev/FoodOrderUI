@@ -28,7 +28,7 @@ public class MainActivity<sum> extends AppCompatActivity {
             "Le-Pigeon\nBurger"
     };
 
-    int[]  weights = {
+    int[] weights = {
             280,
             190,
             320,
@@ -36,11 +36,9 @@ public class MainActivity<sum> extends AppCompatActivity {
             250,
             380
     };
-    private float sum = 0;
-//    String.format("%.0f",sum);
+    private float sum = 0.00f;
+    private float sums = 0.00f;
 
-
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,7 +75,7 @@ public class MainActivity<sum> extends AppCompatActivity {
                 updatePrice();
                 mainPriceChange(7.99);
                 changeBurgerName(0);
-                changeBUrgerWeights(0);
+                changeBurgerWeights(0);
                 receipe.setText(R.string.Decription1);
             } else {
                 check1.setVisibility(View.INVISIBLE);
@@ -94,7 +92,7 @@ public class MainActivity<sum> extends AppCompatActivity {
                 mainPriceChange(9.99);
                 updatePrice();
                 changeBurgerName(1);
-                changeBUrgerWeights(1);
+                changeBurgerWeights(1);
                 receipe.setText(R.string.Decription2);
 
             } else {
@@ -111,7 +109,7 @@ public class MainActivity<sum> extends AppCompatActivity {
                 updatePrice();
                 changeBurgerName(2);
                 mainPriceChange(11.99);
-                changeBUrgerWeights(2);
+                changeBurgerWeights(2);
                 receipe.setText(R.string.Decription3);
 
             } else {
@@ -128,7 +126,7 @@ public class MainActivity<sum> extends AppCompatActivity {
                 updatePrice();
                 mainPriceChange(17.99);
                 changeBurgerName(3);
-                changeBUrgerWeights(3);
+                changeBurgerWeights(3);
                 receipe.setText(R.string.Decription4);
 
             } else {
@@ -145,7 +143,7 @@ public class MainActivity<sum> extends AppCompatActivity {
                 updatePrice();
                 mainPriceChange(12.99);
                 changeBurgerName(4);
-                changeBUrgerWeights(4);
+                changeBurgerWeights(4);
                 receipe.setText(R.string.Decription5);
 
             } else {
@@ -162,7 +160,7 @@ public class MainActivity<sum> extends AppCompatActivity {
                 updatePrice();
                 mainPriceChange(20.99);
                 changeBurgerName(5);
-                changeBUrgerWeights(5);
+                changeBurgerWeights(5);
                 receipe.setText(R.string.Decription6);
             } else {
                 check6.setVisibility(View.INVISIBLE);
@@ -173,28 +171,29 @@ public class MainActivity<sum> extends AppCompatActivity {
         });
 
         orderButton.setOnClickListener(v -> {
-           if (sum != 0){
-               Toast.makeText(this, "Your orders have beeen received ✅", Toast.LENGTH_SHORT).show();
-               sum = 0;
-               mainimage.setImageResource(R.drawable.img_11);
-               priceofburger.setText("$ cost");
-               burgername.setText("Burger's\n           name");
-               weightofburger.setText("Weight: ");
-               receipe.setText(R.string.Decription0);
-               check1.setVisibility(View.INVISIBLE);
-               check2.setVisibility(View.INVISIBLE);
-               check3.setVisibility(View.INVISIBLE);
-               check4.setVisibility(View.INVISIBLE);
-               check5.setVisibility(View.INVISIBLE);
-               check6.setVisibility(View.INVISIBLE);
-           }else
-               Toast.makeText(this, "Please select at least one item 🛠", Toast.LENGTH_SHORT).show();
+            if (sum != 0) {
+                Toast.makeText(this, "Your orders have beeen\nreceived ✅", Toast.LENGTH_SHORT).show();
+                sum = 0;
+                paymentsummary.setText("0 $");
+                mainimage.setImageResource(R.drawable.img_11);
+                priceofburger.setText("$ cost");
+                burgername.setText("Burger's\n           name");
+                weightofburger.setText("Weight: ");
+                receipe.setText(R.string.Decription0);
+                check1.setVisibility(View.INVISIBLE);
+                check2.setVisibility(View.INVISIBLE);
+                check3.setVisibility(View.INVISIBLE);
+                check4.setVisibility(View.INVISIBLE);
+                check5.setVisibility(View.INVISIBLE);
+                check6.setVisibility(View.INVISIBLE);
+            } else
+                Toast.makeText(this, "Please select at least one item 🛠", Toast.LENGTH_SHORT).show();
         });
 
     }
 
-    private void changeBUrgerWeights(int i) {
-        weightofburger.setText("Weight: " + weights[i] + "g");
+    private void changeBurgerWeights(int i) {
+        weightofburger.setText("Weight: " + weights[i] + " g");
     }
 
     private void changeBurgerName(int i) {
@@ -206,6 +205,6 @@ public class MainActivity<sum> extends AppCompatActivity {
     }
 
     private void updatePrice() {
-        paymentsummary.setText("$" + String.format("%.2f",sum));
+        paymentsummary.setText("$" + String.format("%.2f", sum));
     }
 }
